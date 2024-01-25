@@ -20,7 +20,7 @@ std::string V1NameMasqOfIm(const std::string & aName)
 
 void Init_mm3d_In_MMVII()
 {
-   //
+   // 
    static bool First= true;
    if (! First) return;
    First = false;
@@ -79,11 +79,11 @@ cDataFileIm2D cDataFileIm2D::Create(const std::string & aName,bool aForceGray)
 cDataFileIm2D  cDataFileIm2D::Create(const std::string & aName,eTyNums aType,const cPt2di & aSz,int aNbChan)
 {
    Tiff_Im::PH_INTER_TYPE aPIT = Tiff_Im::BlackIsZero;
-   if (aNbChan==1)
+   if (aNbChan==1) 
       aPIT = Tiff_Im::BlackIsZero;
-   else if (aNbChan==3)
+   else if (aNbChan==3) 
       aPIT = Tiff_Im::RGB;
-   else
+   else 
    {
       MMVII_INTERNAL_ASSERT_strong(false,"Incoherent channel number");
    }
@@ -433,7 +433,7 @@ cIm2D<tU_INT1> ImageOfString_DCT(const std::string & aStr ,int aSpace)
 void Convert_JPG(const std::string &  aNameIm,bool DeleteAfter,tREAL8 aQuality,const std::string & aPost)
 {
     cParamCallSys aCom("convert","-quality",ToStr(aQuality),
-                           aNameIm,
+	                   aNameIm,
                        LastPrefix(aNameIm) + "." + aPost
                        );
 
@@ -447,7 +447,7 @@ void Convert_JPG(const std::string &  aNameIm,bool DeleteAfter,tREAL8 aQuality,c
 }
 
 
-//  INSTANTIATION
+//  INSTANTIATION 
 
 #define MACRO_INSTANTIATE_READ_FILE(Type)\
 template class cDataIm2D<Type>;\
