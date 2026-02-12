@@ -1602,7 +1602,6 @@ template class cTplBoxOfPts<tREAL8,DIM>;\
 template class cTplBoxOfPts<tREAL16,DIM>;\
 template class cPixBox<DIM>;\
 template  int NbPixVign(const cPtxd<int,DIM> & aVign);\
-template class cDataGenUnTypedIm<DIM>;\
 template <> const cPixBox<DIM> cPixBox<DIM>::TheEmptyBox(cPtxd<int,DIM>::PCste(0),cPtxd<int,DIM>::PCste(0),true);
 
 template void MakeBoxNonEmptyWithMargin(cPtxd<tREAL8,2>&,cPtxd<tREAL8,2>&,tREAL8,tREAL8,tREAL8);
@@ -1644,6 +1643,6 @@ MACRO_INSTATIATE_PRECT_DIM(5)
 //MACRO_INSTATIATE_POINT(4)
 // MACRO_INSTATIATE_POINT(5)
 
-
+template class cDataGenUnTypedIm<2>;
 
 };
