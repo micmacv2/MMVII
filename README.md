@@ -156,7 +156,7 @@ For those who really need it, you can reactivate use of the MicMac V1 lib  :
 
 - Install **MicMac v1** by following the instructions **[HERE](https://github.com/micmacIGN/micmac)**.
 
-- Activate the CMake option **MMVII_KEEP_LIBRARY_MMV1** in the step '__Configure CMAKE and generate makefiles:__'
+- Activate the CMake option **MMVII_KEEP_LIBRARY_MMV1** in the step '__Configure CMAKE and generate makefiles:
         ```bash
         cmake .. -DMMVII_KEEP_LIBRARY_MMV1=on -DMMV1_PATH=your_directory_of_micmacv1
         ```
@@ -196,14 +196,15 @@ You can add the MMVI\bin path (in this example, c:\pgms\MMVII\bin) to your envir
 	```sh
 	MMVII Bench 1
 	```
-There may be a lot of cryptic messages and some **"##   - Nb Warning "** at the end, but the test passed if execution does not end with a message of the form:
-
-	```######################################
+There may be a lot of cryptic messages and some **"##   - Nb Warning "** at the end, but the test passed if execution **does not** end with a message of the form:
+```
+	######################################
 	Level=[UserEr:xxxxxxx]
 	Mes=[xxxxxxx xxxxxxxxxx xxxxxx xxxxxx]
 	========= ARGS OF COMMAND ==========
 	C:\pgms\MMVII\bin\MMVII.exe Bench 1	
-	```
+```
+	
 
 # Documentation
 
